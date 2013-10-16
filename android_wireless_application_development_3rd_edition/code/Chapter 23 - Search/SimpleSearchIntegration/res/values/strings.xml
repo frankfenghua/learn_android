@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, SimpleSearchIntegrationMenuActivity!</string>
+    <string name="app_name">Simple Search Integration</string>
+    <string name="search_hint">Search Simple Searchable data</string>
+    <string name="search_settings_help">Search SimpleFieldnotes App</string>
+    <string name="menu_search">Search</string>
+</resources>

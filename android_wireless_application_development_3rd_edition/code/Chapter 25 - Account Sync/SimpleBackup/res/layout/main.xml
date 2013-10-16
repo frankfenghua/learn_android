@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:id="@+id/LinearLayoutInput"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_width="match_parent">
+
+		<TextView android:layout_height="wrap_content" android:text="@string/label"
+			android:textSize="18dp" android:layout_width="wrap_content" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/EditText_AppData"
+			android:layout_width="match_parent"></EditText>
+	</LinearLayout>
+	
+
+	<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content"><Button android:id="@+id/Button_SaveData" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/button_label" android:onClick="saveData"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Button_LoadData" android:text="Load prefs and file data" android:onClick="loadData"></Button>
+</LinearLayout><LinearLayout android:id="@+id/LinearLayoutButtons"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_width="match_parent">
+		<Button android:id="@+id/Button_Backup" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight=".5"
+			android:text="@string/backup_label" android:onClick="performBackup"></Button>
+		<Button android:id="@+id/Button_Restore" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight=".5"
+			android:text="@string/restore_label" android:onClick="performRestore"></Button>
+	</LinearLayout>
+
+
+
+	<TextView android:layout_height="wrap_content"
+		android:textSize="18dp" android:layout_width="match_parent"
+		android:text="@string/current_data"  />
+
+	<TextView android:id="@+id/curData" android:layout_height="wrap_content"
+		android:textSize="18dp" android:layout_width="match_parent"
+		 />
+
+
+
+</LinearLayout>

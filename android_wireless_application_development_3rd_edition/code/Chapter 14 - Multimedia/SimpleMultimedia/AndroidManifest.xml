@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="auto"
+    package="com.androidbook.simplemultimedia"
+    android:versionCode="2"
+    android:versionName="1.1" >
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="14" >
+    </uses-sdk>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.front" />
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".SimpleMultimediaActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="AudioActivity" >
+        </activity>
+        <activity android:name="StillImageActivity" >
+        </activity>
+        <activity android:name="VideoPlayActivity" >
+        </activity>
+        <activity android:name="VideoRecordActivity" >
+        </activity>
+        <activity android:name="MediaSearchActivity" >
+        </activity>
+    </application>
+</manifest>

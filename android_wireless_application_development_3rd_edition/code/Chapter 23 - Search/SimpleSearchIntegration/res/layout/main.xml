@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Load db data. Try the search button. Enable this app in global search settings for Quick Search Box integration." />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset_data"
+        android:onClick="onResetData"
+        android:text="Reset Data"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/req_search"
+        android:onClick="onForceSearch"
+        android:text="Force Search"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_settings"
+        android:text="Device Search Settings"
+        android:onClick="onLaunchGlobalSearchSettings"></Button>
+</LinearLayout>

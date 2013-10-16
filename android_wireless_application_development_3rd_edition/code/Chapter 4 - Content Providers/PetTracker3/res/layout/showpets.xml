@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayoutHeader"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <TextView
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Your Pets"
+        android:textColor="#0f0" />
+    <Button
+        android:id="@+id/ButtonEnterMorePets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Add More Pets" >
+    </Button>
+    <ListView
+        android:id="@+id/petList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ButtonEnterMorePets"
+        android:divider="#000" />
+</RelativeLayout>

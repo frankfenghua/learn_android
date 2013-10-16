@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+        <Button
+            android:id="@+id/start_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Sensor" />
+        <Button
+            android:id="@+id/stop_sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Sensor"
+            android:visibility="gone" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:layout_margin="10dp"
+        android:gravity="right"
+        android:text="... data will go here ..." />
+    <ScrollView
+        android:id="@+id/sensor_button_group"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/status"
+        android:layout_alignParentTop="true" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Sensors Info" />
+            <RadioGroup
+                android:id="@+id/sensor_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <RadioButton
+                    android:id="@+id/sensor_accel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accelerometer" />
+                <RadioButton
+                    android:id="@+id/sensor_gravity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gravity (API 9+)" />
+                <RadioButton
+                    android:id="@+id/sensor_linear_accel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Linear Acceleration (API 9+)" />
+                <RadioButton
+                    android:id="@+id/sensor_mag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Magnetic" />
+                <RadioButton
+                    android:id="@+id/sensor_orient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Orientation (Deprecated API 8+)" />
+                <RadioButton
+                    android:id="@+id/sensor_gyro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gyroscope (API 9+)" />
+                <RadioButton
+                    android:id="@+id/sensor_rot_vector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rotation Vector (API 9+)" />
+                <RadioButton
+                    android:id="@+id/sensor_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Light" />
+                <RadioButton
+                    android:id="@+id/sensor_prox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Proximity" />
+                <RadioButton
+                    android:id="@+id/sensor_pressure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pressure (API 9+)" />
+                <RadioButton
+                    android:id="@+id/sensor_rel_humid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relative Humidity (API 14+)" />
+                <RadioButton
+                    android:id="@+id/sensor_ambient_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ambient Temp (API 14+)" />
+                <RadioButton
+                    android:id="@+id/sensor_temp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temperature (Deprecated API 14)" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/ScrollView01"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:scrollbars="vertical" android:layout_height="fill_parent"
+	android:layout_width="fill_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="@string/hello" />
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:inputType="text|textCapCharacters"
+			android:hint="text|textCapCharacters"></EditText>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:inputType="text|textEmailAddress" android:hint="text|textEmailAddress"></EditText>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:inputType="text|textPassword" android:hint="text|textPassword"></EditText>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:inputType="number" android:hint="number"></EditText>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:inputType="phone" android:hint="phone"></EditText>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:inputType="datetime" android:hint="datetime"></EditText>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:lines="5" android:inputType="text|textCapSentences|textMultiLine" android:hint="text|textCapSentences|textMultiLine"></EditText>
+	</LinearLayout>
+</ScrollView>

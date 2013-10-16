@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label">Enter a string:</string>
+    <string name="app_name">Simple Backup</string>
+<string name="button_label">Save as preference &amp; as a file</string>
+<string name="backup_label">Backup</string>
+<string name="restore_label">Restore</string>
+<string name="current_data">Current App Data:</string>
+
+</resources>

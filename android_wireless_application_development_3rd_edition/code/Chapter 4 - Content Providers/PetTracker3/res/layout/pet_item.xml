@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayoutItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/ImageView_PetPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="Image of pet"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_launcher" >
+    </ImageView>
+    <TextView
+        android:id="@+id/TextView_PetName"
+        style="@android:style/TextAppearance.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="Name" >
+    </TextView>
+    <TextView
+        android:id="@+id/TextView_PetType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:text="Type" >
+    </TextView>
+</RelativeLayout> <!-- android:layout_height="?android:attr/listPreferredItemHeight" -->
